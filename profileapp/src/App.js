@@ -1,15 +1,17 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
+import React from "react";
+import FullName from "./Component/Profile/fullName.js";
+import Address from "./Component/Profile/address.js";
+import ProfilePhoto from "./Component/Profile/profilePhoto.js";
 import "./App.css";
-import profilePhoto from "./Component/profilePhoto.js";
-import fullName from "./Component/fullName.js";
-import address from "./Component/address.js";
 
-function App() {
-  return (
-    <div className="App">
-      <div>test</div>
-    </div>
-  );
-}
-
+const App = () => (
+  <div className="App">
+    <ProfilePhoto />
+    <hr />
+    <FullName />
+    <Address />
+    <hr />
+  </div>
+);
 export default App;
